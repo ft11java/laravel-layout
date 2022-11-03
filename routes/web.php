@@ -5,6 +5,7 @@ use App\Http\Controllers\Ornek;
 use App\Http\Controllers\Yonet;
 use App\Http\Controllers\Formislemleri;
 use App\Http\Controllers\Veritabaniislemleri;
+use App\Http\Controllers\Employe;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,9 +19,12 @@ Route::get('/home', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/employe', function () {
+/*Route::get('/employe', function () {
     return view('employe');
-});
+});*/
+
+Route::get('/employe',[Employe::class,'getAllEmploye']);
+Route::get('/employecreate',[Employe::class,'createEmploye']);
 
 Route::get('/test/{isim}',[Ornek::class,'test']);
 

@@ -11,8 +11,8 @@
 <body>
 
     <!-- top start -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,25 +42,21 @@
                         <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
     <!-- top end -->
 
-    <div class="container">
+    <div class="container mt-2">
     @yield('content')
     </div>
 
-    <!-- footer start -->
+    <!-- footer start 
     <footer class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
         <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
-    <!-- footer end -->
+    footer end -->
     <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
     @yield('js')
 </body>
